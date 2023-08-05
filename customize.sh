@@ -4,7 +4,7 @@ ui_print "且本模块已在GitHub免费开源,开源链接:https://github.com/B
 ui_print "正在检测运行环境"
 if [ $KSU = true ]
 then
-    ui_print "管理器:ksu(ksu模式未经过验证,如有问题请在GitHub提issues)"
+    ui_print "管理器:ksu(ksu模式为实验性功能,如有问题请在GitHub提issues)"
     ui_print "ksu版本"
     ui_print $KSU_VER
 else
