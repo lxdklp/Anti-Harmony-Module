@@ -1,0 +1,1 @@
+cp -f /data/adb/modules/ba_cn_unlocker/backup/* /data/media/0/Android/data/com.RoamingStar.BlueArchive/files/AssetBundls/
