@@ -13,4 +13,5 @@ assignees: lxdklp
 Android版本:
 ba版本:
 
-**管理器输出及截图**
+**安装日志**
+日志位于模块目录(/data/adb/modules/ba_cn_unlocker)下的install.log
