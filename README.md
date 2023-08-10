@@ -1,3 +1,5 @@
+# 目前模块重构中
+
 # 这是什么?
 这是用于[蔚蓝档案](https://bluearchive-cn.com/)反和谐的ksu/magisk模块
 
