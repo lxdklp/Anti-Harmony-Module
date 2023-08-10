@@ -1,20 +1,20 @@
-# 目前模块重构中
+# 安装过旧版本的注意
+3.0进行了重构,无需像老版本一样安装两次。但是可能会与旧版本产生冲突,必要时请重装蔚蓝档案(我保证是最后一次了)
 
 # 这是什么?
-这是用于[蔚蓝档案](https://bluearchive-cn.com/)反和谐的ksu/magisk模块
+这是用于[蔚蓝档案](https://bluearchive-cn.com/)反和谐的Kernel SU/Magisk模块
 
 # 我该怎么使用?
-直接在ksu/magisk管理器中按照说明刷入本模块  
-**仍然不会？**  [**点击链接加入群聊【BA国服反和谐交流群】**](https://qm.qq.com/cgi-bin/qm/qr?k=xJx5SpbL-Exu7Fk1oiIXldAN1J_LEUb4&jump_from=webapi&authKey=An0DcDs9/SDZsBNCDJWngMuQDt+ty7UPfwn4qto1JkCVLOAUK5TIS+ihQjTAfD2Q) **，寻求群友的帮助！   （加群答案：GitHub）**
-
-# 这个模块干了什么?
-第一次安装:释放文件,第二次安装:替换文件
+直接在Kernel SU/Magisk管理器中刷入本模块
 
 # 计划
 1. 管理器支持：
-    - magisk支持
-    - ksu支持
-2. 功能实现：
+    - Magisk支持
+    - Kernel SU支持
+2. 服务器支持:
+    - 官服
+    - b服
+3. 功能实现：
     - 替换文件
-    - ~~恢复文件~~
-    - ~~更新~~
+    - 卸载时恢复(实验性,大概率与旧版本不兼容)
+    - ~~更新(目前ba没有版本更新，还不知道怎么做)~~
