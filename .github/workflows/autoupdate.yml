@@ -1,0 +1,48 @@
+name: Follow Upstream Respository
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: 跟踪上游仓库
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "准备当前模块"
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.inputs.tag }}
+
+      - name: "准备上游"
+        uses: actions/checkout@v4
+        with:
+          repository: 'BlueArchiveCN/Anti-Harmony'
+          path: 'upstream'
+      - name: "复制资源"
+        run: |
+          mkdir -p files 
+          ls 
+          ls upstream
+          cp upstream/安卓*/* files/
+          rm -rf upstream
+      
+      - name: "添加小版本号"
+        run: | 
+          versionCode="$(cat module.json | jq ".versionCode")"
+          versionCode=$(( versionCode + 1 ))
+          jq ".versionCode |= $versionCode" module.json > new.json
+          mv new.json module.json
+
+      - name: Commit files
+        run: |
+          git config --local user.email "autoupdate[bot]@users.noreply.github.com"
+          git config --local user.name "autoupdate[bot]"
+          git add *
+          git commit -m "Follow Upstream"
+      
+      - name: 推送仓库
+        uses: ad-m/github-push-action@master
+        with:
+          branch: ${{ github.ref }}
