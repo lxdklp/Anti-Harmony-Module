@@ -1,11 +1,17 @@
-# 安装过旧版本的注意
-3.0进行了重构,无需像老版本一样安装两次。但是可能会与旧版本产生冲突,必要时请重装蔚蓝档案(我保证是最后一次了)
+# Anti-Harmony-Module
 
 # 这是什么?
-这是用于[蔚蓝档案](https://bluearchive-cn.com/)反和谐的Kernel SU/Magisk模块
+这是安装[Anti-Harmony](https://github.com/BlueArchiveCN/Anti-Harmony/)项目脚本的Kernel SU/Magisk模块。
 
 # 我该怎么使用?
-直接在Kernel SU/Magisk管理器中刷入本模块
+Release里下载zip文件，直接在Kernel SU/Magisk管理器中刷入即可使用。
+
+# 失效情况
+
+- 大版本更新
+- 手动重新下载资源
+
+失效后请**重新安装**
 
 # 计划
 1. 管理器支持：
