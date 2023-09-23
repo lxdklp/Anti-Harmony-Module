@@ -1,26 +1,19 @@
-# Anti-Harmony-Module
+# 项目介绍
 
-# 这是什么?
-这是安装[Anti-Harmony](https://github.com/BlueArchiveCN/Anti-Harmony/)项目脚本的Kernel SU/Magisk模块。
+由于[蔚蓝档案](https://bluearchive-cn.com/)在 2023/9/21 日再次和谐了部分角色，固写了这个 Magisk 模块用于替换游戏角色立绘。
 
-# 我该怎么使用?
-Release里下载zip文件，直接在Kernel SU/Magisk管理器中刷入即可使用。
+本模块主要是在[Anti-Harmony-Module](https://github.com/BlueArchiveCN/Anti-Harmony-Module)的基础上更新游戏原本立绘。
 
-# 失效情况
+注意：修改游戏文件有一定的风险，用别怕，怕别用！
 
-- 大版本更新
-- 手动重新下载资源
+# 使用方法
 
-失效后请**重新安装**
+直接在 Kernel SU / Magisk 管理器中刷入本模块。
 
-# 计划
-1. 管理器支持：
-    - Magisk支持
-    - Kernel SU支持
-2. 服务器支持:
-    - 官服
-    - b服
-3. 功能实现：
-    - 替换文件
-    - 卸载(实验性,未经验证)
-    - ~~更新(目前ba没有版本更新，还不知道怎么做)~~
+# 致谢
+
+感谢 [yemoyu123](https://github.com/BlueArchiveCN/Anti-Harmony/commits?author=yemoyu123) 在[Anti-Harmony](https://github.com/BlueArchiveCN/Anti-Harmony)中分享了反和谐文件
+
+感谢 [lxdklp](https://github.com/lxdklp) 在[Anti-Harmony-Module](https://github.com/BlueArchiveCN/Anti-Harmony-Module)中分享了替换模块
+
+感谢 [zjw2017](https://github.com/zjw2017) 提供的[MagiskModule_OnlineUpdate](https://github.com/zjw2017/MagiskModule_OnlineUpdate)模板
