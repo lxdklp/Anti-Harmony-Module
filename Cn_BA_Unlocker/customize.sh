@@ -74,18 +74,7 @@ on_change(){
     #官服检测
     if [ -d "/data/media/0/Android/data/com.RoamingStar.BlueArchive" ]; then
         ui_print "已检测到官服"
-        mkdir -p /sdcard/Documents/BA-backups
-        for file in ${MODPATH}/files/*; do
-            filename=$(basename "$file")
-            if [ -f "/data/media/0/Android/data/com.RoamingStar.BlueArchive/files/AssetBundls/$filename" ]; then
-                cp "/data/media/0/Android/data/com.RoamingStar.BlueArchive/files/AssetBundls/$filename" "/sdcard/Documents/BA-backups/$filename"
-            fi
-        done
-        cp -r ${MODPATH}/files/* /data/media/0/Android/data/com.RoamingStar.BlueArchive/files/AssetBundls/
-        ui_print "*******************************************************"
-        ui_print "模块会将游戏原有文件备份到/sdcard/Documents/BA-backups/"
-        ui_print "如需恢复游戏文件可自行替换"
-        ui_print "*******************************************************"
+        cp -r ${MODPATH}/files/* /data/media/0/Android/data/com.RoamingStar.BlueArchive/files/
     else
         ui_print "未检测到官服"
     fi
@@ -94,18 +83,7 @@ on_change(){
     #b服安装
     if [ -d "/data/media/0/Android/data/com.RoamingStar.BlueArchive.bilibili" ]; then
         ui_print "已检测到b服"
-        mkdir -p /sdcard/Documents/BA-b-backups
-        for file in ${MODPATH}/files/*; do
-            filename=$(basename "$file")
-            if [ -f "/data/media/0/Android/data/com.RoamingStar.BlueArchive.bilibili/files/AssetBundls/$filename" ]; then
-                cp "/data/media/0/Android/data/com.RoamingStar.BlueArchive.bilibili/files/AssetBundls/$filename" "/sdcard/Documents/BA-b-backups/$filename"
-            fi
-        done
-        cp -r ${MODPATH}/files/* /data/media/0/Android/data/com.RoamingStar.BlueArchive/files/AssetBundls/
-        ui_print "*******************************************************"
-        ui_print "模块会将游戏原有文件备份到/sdcard/Documents/BA-b-backups/"
-        ui_print "如需恢复游戏文件可自行替换"
-        ui_print "*******************************************************"
+        cp -r ${MODPATH}/files/* /data/media/0/Android/data/com.RoamingStar.BlueArchive.bilibili/files/
     else
         ui_print "未检测到b服"
     fi
