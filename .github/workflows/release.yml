@@ -4,6 +4,9 @@ on:
     paths:
       - "module.json"
   workflow_dispatch:
+
+permissions: write-all
+
 jobs:
   build:
     runs-on: ubuntu-latest
