@@ -1,3 +1,0 @@
-Env=dev
-IsLocalize=false
-ResUrls=http://mx.jvav.net.cn/asdf;http://mx.jvav.net.cn/asdf;http://mx.jvav.net.cn/asdf
